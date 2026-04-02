@@ -2,7 +2,7 @@
 
 [![Binder](https://gesis.mybinder.org/badge_logo.svg)](https://gesis.mybinder.org/v2/gh/daniellechase/honeybee-nestsiteselection/main?urlpath=voila%2Frender%2Fhoneybee_demo.ipynb)
 
-Interactive simulation of honeybee nest-site selection, based on Seeley et al. (2012). Includes an agent-based model (ABM), ODE mean-field approximation, phase portrait, and bifurcation diagram.
+Interactive simulation of honeybee nest-site selection, based on Seeley et al. (2012). The demo was created for a guest lecture in CSCI 5423.
 
 ## Run in browser
 
