@@ -1,7 +1,7 @@
 """
 Honeybee Nest-Site Selection Simulation
 ========================================
-Model: Seeley, Visscher, Schlegel, Hogan, Franks & Marshall (2012), Science 335:108-11.
+Model: Seeley, et. al. (2012), Science 
 
 States:  U = uncommitted,  A = committed to site A,  B = committed to site B
 
@@ -12,7 +12,7 @@ ODE (mean-field, Eq. 1-2 in Chase & Peleg 2025):
 
 import numpy as np
 import matplotlib
-matplotlib.use("MacOSX")
+# matplotlib.use("MacOSX")
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import matplotlib.animation as animation
@@ -55,12 +55,6 @@ def ode_rhs_vec(PA, PB, params):
 
 ODE_HOR = 100.0
 
-def _shared_ic(N):
-    """Random IC: 0 or 1 bee committed to each site."""
-    rng = np.random.default_rng()
-    na = int(rng.integers(0, 2))
-    nb = int(rng.integers(0, 2))
-    return [na / N, nb / N], na, nb
 
 def solve_ode(params, ic, horizon=ODE_HOR):
     sol = solve_ivp(ode_rhs, [0, horizon], list(ic), args=params,
