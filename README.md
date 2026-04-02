@@ -4,4 +4,4 @@
 
 Interactive simulation of honeybee nest-site selection, based on Seeley et al. (2012). 
 
-Click the badge above to launch the interactive app in your browser — no installation required.
+Click the badge above to launch the interactive app in your browser.
