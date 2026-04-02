@@ -26,20 +26,14 @@ The display shows three panels:
 
 ### Controls
 
-**Sliders** — adjust the four rate parameters for each site:
-- **Commit** (α^c): rate at which uncommitted bees begin scouting a site
-- **Recruit** (α^r): rate at which committed bees recruit others via waggle dance
-- **Abandon** (α^a): rate at which committed bees stop scouting
-- **Stop signal** (α^s): rate at which bees from one site inhibit the other (piping behavior)
-
 Each slider has a text box on the right where you can type a value directly.
 
 **N bees** slider — changes the number of bees in the ABM.
 
-**Equal sites** checkbox — when checked, Site A and Site B sliders are linked and move together (symmetric competition). Uncheck it to set Site A and Site B parameters independently and explore asymmetric scenarios.
+**Equal sites** checkbox — when checked, Site A and Site B sliders are linked and move together. Uncheck it to set Site A and Site B parameters independently.
 
 **Reset** — restarts the simulation with the current parameter values.
 
 **Pause / Resume** — freezes and unfreezes the animation.
 
-**Bifurcation** — opens a bifurcation diagram showing stable and unstable fixed points as the stop-signal rate σ varies, with a marker at the current σ value.
+**Bifurcation** — opens a bifurcation diagram showing stable and unstable fixed points as the stop-signal rate σ varies, with a marker at the current σ value. Note: this button does not work in the browser version (Binder); run locally to use it.
